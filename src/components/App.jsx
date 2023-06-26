@@ -6,12 +6,12 @@ import {HomePage} from "../page/HomePage";
 export const App = () => {
   return (<>
 
-  <Routers>
+  <Routes>
     <Route path="/" element={<Header />}>
       <Route index element={<HomePage />}/>
 
     </Route>
-  </Routers>
+  </Routes>
 
   </>);
 };
