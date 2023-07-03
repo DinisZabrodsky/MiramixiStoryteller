@@ -1,10 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond&family=Inter&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@400;700&family=Nixie+One&family=Open+Sans&display=swap');
+
+
 @import-normalize; /* bring in normalize.css styles */
+
 
 *{
   box-sizing: border-box;
 }
 
 body {
+  background-color: #011126;
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -18,6 +25,115 @@ code {
     monospace;
 }
 
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+
+  display: block;
+  margin: 0;
+
+}
+
+
+.hero-titel {
+  margin: 0;
+
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 100%;
+
+  color: #f3feff;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px #16dcf2;
+}
+
+.titel-h2 {
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.15;
+
+  text-transform: uppercase;
+
+  color: #f2ae30;
+
+  margin: 0;
+}
+
+.titel-h2::after {
+    display: block;
+    background-color: transparent;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+
+
+h3 {
+  
+    margin: 0;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 94.8%;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+.form-titel-h3 {
+  display: inline-block;
+  margin: 0;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: #16dcf2;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+p {
+  display: block;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  margin-top: 20px;
+
+  color: #ffffff;
+}
+
+p > b {
+  font-weight: 800;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -28,6 +144,83 @@ li {
   border: none;
 }
 
-a {
-  text-decoration: none;
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  font-style: normal;
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  border-radius: 86px;
+
+  cursor: pointer;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+  
+button:hover, button:focus {
+    box-shadow: 0px 0px 10px #16DCF2;
+}
+
+/* button:active {
+    background-color: #16DCF2;
+} */
+
+
+label {
+  display: block;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: #FFFFFF;
+}
+
+input, textarea {
+  display: block;
+  resize: none;
+
+  width: 233px;
+  height: 40px;
+  padding: 10px;
+
+  border: none;
+  border-bottom: 1.5px solid #ffffff;
+  background-color: transparent;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #ffffff;
+}
+
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
+    color: #ffffff;
+  }
+
+input:focus, textarea:hover {
+    outline: none;  
+}
+
