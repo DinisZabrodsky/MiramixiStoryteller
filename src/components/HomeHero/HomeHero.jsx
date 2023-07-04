@@ -1,4 +1,5 @@
 
+import Icons from '../../image/Icons.svg'
 import cssHomeHero from './HomeHero.module.scss'
 
 export const HomeHero = () => {
@@ -10,7 +11,7 @@ export const HomeHero = () => {
                 <button className={cssHomeHero.heroButton} type="button">
                     Почати гру
                     <svg className={cssHomeHero.heroButtonSvg}>
-                        <use href="./images/icons.svg#icon-Steam"></use>
+                        <use href={Icons + "#icon-Steam"}></use>
                     </svg>
                 </button>
             </div>

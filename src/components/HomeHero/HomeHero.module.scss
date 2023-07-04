@@ -4,6 +4,7 @@
 };
 
 .heroConteiner {
+    position: relative;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -17,6 +18,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    padding-bottom: 56px;
 
     max-width: 744px;
     height: 700px;
@@ -63,10 +65,26 @@
         height: 1037px;
         
     }
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        height: 145px;
+
+
+        background: linear-gradient(180deg, rgba(13, 0, 13, 0.00) 0%, #0D000D 100%);
+
+    }
 }
 
 .heroText {
-    margin: 10px 30px;
+    margin: 10px 40px;
 
     padding: 0 20px;
 
@@ -81,7 +99,17 @@
     color: #FFFFFF;
 
     @media screen and (min-width: 744px) {
-      
+      margin-top: 15px;
+
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 28px;
+      }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 32px;
     }
 }
 
@@ -89,12 +117,12 @@
 .heroButton {
     position: relative;
 
-    font-family: 'Montserrat' sans-serif;
-
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-
     margin-top: 40px;
+
+    font-size: 14.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
     width: 261px;
     height: 56px;
 
@@ -104,10 +132,16 @@
     transition: 0.5s;
     overflow: hidden;
 
-    background: linear-gradient(92.64deg, rgba(22, 220, 242, 0.2) 0%, rgba(22, 220, 242, 0) 100%), radial-gradient(107.5% 107.5% at 50% 215%, rgba(22, 220, 242, 0.08) 0%, rgba(22, 220, 242, 0) 100%), linear-gradient(267.36deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 999px;
-    filter: drop-shadow(0px 0px 10px #16DCF2);
+    border: 2px solid rgba(22, 220, 242, 0.10);
+    background: linear-gradient(135deg, rgba(22, 220, 242, 0.20) 0%, rgba(22, 220, 242, 0.00) 100%), radial-gradient(107.50% 107.50% at 50.00% 215.00%, rgba(22, 220, 242, 0.08) 0%, rgba(22, 220, 242, 0.00) 100%), linear-gradient(225deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%);
 
+    @media screen and (min-width: 744px) {
+        margin-top: 55px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
 
     &Svg {
         display: block;
