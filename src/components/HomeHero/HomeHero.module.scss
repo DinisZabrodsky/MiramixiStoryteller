@@ -18,29 +18,51 @@
     background-size: cover;
 
 
-    width: 360px;
+    max-width: 744px;
     height: 700px;
 
-    background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroTable.jpg);
+    background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroMobile.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroTable@2x.jpg);
+        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroMobile@2x.jpg);
     }
 
-    // @media screen and (min-width: 1920px) {
-        // max-width: 1920px;
-        // height: 1037px;
+    @media screen and (min-width: 360px) {
+        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroTable.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroTable@2x.jpg);
+        }
+    }
 
-        // background-image: url(../images/Hero/BGHero.jpg);
+    @media screen and (min-width: 744px) {
+        max-width: 1440px;
+        height: 1040px;
 
-        // @media screen and (min-device-pixel-ratio: 2),
-        // (min-resolution: 192dpi),
-        // (min-resolution: 2dppx) {
-        //     background-image: url(../images/Hero/BGHero@2x.jpg);
-        // }
-    //}
+        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroDesctop.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroDesctop@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 1920px;
+        height: 777px;
+        
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 1920px;
+        height: 1037px;
+        
+    }
 }
 
 .heroText {
