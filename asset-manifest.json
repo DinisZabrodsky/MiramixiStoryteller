@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MiramixiStoryteller/static/css/main.b32cf8f5.css",
-    "main.js": "/MiramixiStoryteller/static/js/main.c3a25cec.js",
+    "main.css": "/MiramixiStoryteller/static/css/main.ade008db.css",
+    "main.js": "/MiramixiStoryteller/static/js/main.f90e9224.js",
     "static/media/GamirareLogo.png": "/MiramixiStoryteller/static/media/GamirareLogo.74912f44baa85ced8288.png",
     "static/media/HeaderMenu.svg": "/MiramixiStoryteller/static/media/HeaderMenu.dbfeeb13b314f3cc413f9ead4346ba34.svg",
     "index.html": "/MiramixiStoryteller/index.html",
-    "main.b32cf8f5.css.map": "/MiramixiStoryteller/static/css/main.b32cf8f5.css.map",
-    "main.c3a25cec.js.map": "/MiramixiStoryteller/static/js/main.c3a25cec.js.map"
+    "main.ade008db.css.map": "/MiramixiStoryteller/static/css/main.ade008db.css.map",
+    "main.f90e9224.js.map": "/MiramixiStoryteller/static/js/main.f90e9224.js.map"
   },
   "entrypoints": [
-    "static/css/main.b32cf8f5.css",
-    "static/js/main.c3a25cec.js"
+    "static/css/main.ade008db.css",
+    "static/js/main.f90e9224.js"
   ]
 }
