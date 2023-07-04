@@ -3,7 +3,7 @@
     background-color: #0D000D;
 };
 
-.hero-conteiner {
+.heroConteiner {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -18,15 +18,15 @@
     background-size: cover;
 
 
-    max-width: 1920px;
-    height: 1037px;
+    width: 360px;
+    height: 700px;
 
-    background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroMobile.jpg);
+    background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroTable.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroMobile@2x.jpg);
+        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroTable@2x.jpg);
     }
 
     // @media screen and (min-width: 1920px) {
@@ -43,19 +43,28 @@
     //}
 }
 
-.hero-text {
-    margin: 20px;
+.heroText {
+    margin: 10px 30px;
 
-    font-family: 'Montserrat';
+    padding: 0 20px;
+
+    font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
     text-transform: uppercase;
+    text-align: center;
 
-    color: #FFFFFF
+    color: #FFFFFF;
+
+    @media screen and (min-width: 744px) {
+      
+    }
 }
 
-.hero-button {
+
+.heroButton {
     position: relative;
 
     font-family: 'Montserrat' sans-serif;
@@ -78,7 +87,7 @@
     filter: drop-shadow(0px 0px 10px #16DCF2);
 
 
-    &-svg {
+    &Svg {
         display: block;
 
         width: 24px;
