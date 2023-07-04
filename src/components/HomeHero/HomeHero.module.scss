@@ -1,0 +1,92 @@
+.hero {
+    align-items: center;
+    background-color: #0D000D;
+};
+
+.hero-conteiner {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    max-width: 1920px;
+    height: 1037px;
+
+    background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroMobile.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(https://diniszabrodsky.github.io/MiramixiStoryteller/Image/Hero/HomeHeroMobile@2x.jpg);
+    }
+
+    // @media screen and (min-width: 1920px) {
+        // max-width: 1920px;
+        // height: 1037px;
+
+        // background-image: url(../images/Hero/BGHero.jpg);
+
+        // @media screen and (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image: url(../images/Hero/BGHero@2x.jpg);
+        // }
+    //}
+}
+
+.hero-text {
+    margin: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    color: #FFFFFF
+}
+
+.hero-button {
+    position: relative;
+
+    font-family: 'Montserrat' sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    margin-top: 40px;
+    width: 261px;
+    height: 56px;
+
+    gap: 16px;
+    border: none;
+
+    transition: 0.5s;
+    overflow: hidden;
+
+    background: linear-gradient(92.64deg, rgba(22, 220, 242, 0.2) 0%, rgba(22, 220, 242, 0) 100%), radial-gradient(107.5% 107.5% at 50% 215%, rgba(22, 220, 242, 0.08) 0%, rgba(22, 220, 242, 0) 100%), linear-gradient(267.36deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 999px;
+    filter: drop-shadow(0px 0px 10px #16DCF2);
+
+
+    &-svg {
+        display: block;
+
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover, &:focus {
+        background: linear-gradient(92.64deg, rgba(22, 220, 242, 0.2) 0%, rgba(0, 0, 0, 0) 100%, rgba(22, 220, 242, 0) 100%), radial-gradient(84.92% 150% at 50% 138.75%, rgba(22, 220, 242, 0.24) 0%, rgba(22, 220, 242, 0) 100%), linear-gradient(267.36deg, rgba(22, 220, 242, 0.5) 0%, rgba(22, 220, 242, 0.5) 100%);
+    }
+
+}

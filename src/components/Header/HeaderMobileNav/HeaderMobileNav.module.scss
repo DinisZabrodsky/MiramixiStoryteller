@@ -9,7 +9,9 @@
 
     z-index: 500;
 
-
+    &:hover, &:focus {
+        box-shadow: 0px 0px 0px #16dcf200;
+    }
 
     & > svg {
         
@@ -17,14 +19,19 @@
         width: 44px;
         height: 44px;
 
+        box-shadow: 0px 0px 0px #16dcf200;
+
         & use {
             display: block;
             object-fit: contain;
         }
+
+        &:hover, &:focus {
+            filter: drop-shadow(0px 0px 15px #16DCF2);
+        }   
     }
-
-
 }
+
 
 .headerMobileConteiner {
     position: absolute;

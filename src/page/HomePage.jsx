@@ -1,7 +1,8 @@
+import { HomeHero } from "components/HomeHero/HomeHero";
 
 
 export function HomePage () {
     return <>
-    <div>home</div>
+        <HomeHero />
     </>
 }
