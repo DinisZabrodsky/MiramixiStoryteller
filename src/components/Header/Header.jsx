@@ -4,14 +4,13 @@ import { NavLink} from 'react-router-dom'
 import logo from '../../image/Header/GamirareLogo.png'
 import cssHeader from "./Header.module.scss"
 import { HeaderDesctopNav } from './HeaderDesctopNav/HeaderDesctopNav'
-import { useMediaQuery } from 'react-responsive'
 import { HeaderMobileNav } from './HeaderMobileNav/HeaderMobileNav'
+import { useSelector } from 'react-redux'
 
-
+const responsiveState = (state => state.technical)
 export function Header () {
-    const mobileHeader = useMediaQuery({
-        query: '(max-width: 1439px)',
-    })
+    
+    const {mobileResponsive} = useSelector(responsiveState)
 
     return  <>
     <header className={cssHeader.header}>
@@ -21,7 +20,7 @@ export function Header () {
                 <img  className={cssHeader.headerImage} src={logo} alt="Gamirare Logo"/>
             </NavLink>
 
-           {mobileHeader ? <HeaderMobileNav /> : <HeaderDesctopNav/>}
+           {mobileResponsive ? <HeaderMobileNav /> : <HeaderDesctopNav/>}
 
         </div>
 
