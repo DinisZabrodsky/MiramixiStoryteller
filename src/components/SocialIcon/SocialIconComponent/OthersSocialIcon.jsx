@@ -19,7 +19,7 @@ export const OthersSocialIcon = () => {
                 </a>
             </li>
             <li>
-                <a href="#" rel="nofollow noreferrer">
+                <a href="https://store.steampowered.com/app/2123400/Miramixi_Storyteller/" rel="nofollow noreferrer">
                     <svg className={cssSocialIcon.socialIconListSvg}>
                         <use href={SocialIconSvg + "#icon-Twitch"}></use>
                     </svg>
