@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux'
 const responsiveState = (state => state.technical)
 export function Header () {
     
-    const {mobileResponsive} = useSelector(responsiveState)
+    const {desctop} = useSelector(responsiveState)
 
     return  <>
     <header className={cssHeader.header}>
@@ -20,7 +20,7 @@ export function Header () {
                 <img  className={cssHeader.headerImage} src={logo} alt="Gamirare Logo"/>
             </NavLink>
 
-           {mobileResponsive ? <HeaderMobileNav /> : <HeaderDesctopNav/>}
+           {!desctop ? <HeaderMobileNav /> : <HeaderDesctopNav/>}
 
         </div>
 

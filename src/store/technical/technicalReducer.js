@@ -6,11 +6,25 @@ const technicalSlice = createSlice({
     name: 'technical',
     initialState,
     reducers: {
-        addResponsive: (state, {payload}) => {
-            state.mobileResponsive = payload
+        mobileResponsiveReduser: (state, {payload}) => {
+            state.mobile = payload
+            state.tablet = false
+            state.desctop = false
+        },
+
+        tabletResponsiveReduser: (state, {payload}) => {
+            state.tablet = payload
+            state.mobile = false
+            state.desctop = false
+        },
+
+        desctopResponsiveReduser: (state, {payload}) => {
+            state.desctop = payload
+            state.tablet = false
+            state.mobile = false
         }
     }
 })
 
 export const technicalReducer = technicalSlice.reducer
-export const {addResponsive} = technicalSlice.actions
+export const {mobileResponsiveReduser, tabletResponsiveReduser, desctopResponsiveReduser } = technicalSlice.actions

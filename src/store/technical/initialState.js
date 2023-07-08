@@ -1,4 +1,6 @@
 
 export const initialState = {
-    mobileResponsive: true,
+    mobile: true,
+    tablet: false,
+    desctop: false
 }
